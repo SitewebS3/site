@@ -1,12 +1,39 @@
 @font-face {
-    font-family: "California";
-    src: url("California.ttf") format("truetype");
+    font-family: 'California';
+    src: url('California-Medium.woff2') format('woff2'),
+        url('California-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }
 
 /*******************
 *      HEADER      *
 *******************/
 
+header{
+	background-image: url("images/joe-mcdaniel-380048-unsplash.jpg");
+	width: 100%;
+	min-height: 100vh;
+	background-size: cover;
+}
+
+header:after{
+	background-image: url("images/joe-mcdaniel-380048-unsplash4.png");
+	content: "";
+	display: block;
+	background-size: cover;
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+
+h1{
+	font-family: "California";
+	font-size: 60px;
+}
 /*******************
 *      FAUNE      *
 *******************/
