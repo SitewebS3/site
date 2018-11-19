@@ -11,6 +11,39 @@
 *      FAUNE      *
 *******************/
 
+@media screen and (max-width: 500px) {
+  .o_imgarb {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#o_arb1{
+
+}
+
+#o_imgarb1{
+  float: left;
+}
+
+#o_textarb1{
+  float: right;
+  width: 50%;
+}
+
+#o_arb2{
+
+}
+
+#o_imgarb2{
+  float: right;
+}
+
+#o_textarb2{
+  float: left;
+  width: 50%;
+}
+
 /*******************
 *      FLORE       *
 *******************/
