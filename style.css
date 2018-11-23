@@ -73,11 +73,17 @@ nav a{
 #tribal{
 	height: 100vh;
 	position: absolute;
-	margin-left: 90vw; 
+	margin-left: 90vw;
 	z-index: 999;
 }
 /*******************
 *      FAUNE      *
+*******************/
+
+
+
+/*******************
+*      FLORE       *
 *******************/
 
 .titre{
@@ -89,7 +95,7 @@ nav a{
 }
 
 
-#o_faune {
+#o_flore {
 	background-color: #420F01;
 	color: white;
 }
@@ -109,12 +115,17 @@ nav a{
   float: left;
   width: 50%;
   padding-left: 0%;
+  text-align: center;
 }
 
 #o_textarb1{
   float: right;
   width: 50%;
   padding-top: 10%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 110%;
+  line-height: 2;
+  font-weight: bold;
 }
 
 #o_textarb1 p{
@@ -123,23 +134,29 @@ nav a{
 
 #o_arb2{
 	width: 100%;
-	height: 700px;
+	height: 550px;
 	background-color: #933900;
 }
 
 #o_imgarb2{
   float: right;
-  width: 40%;
+  width: 45%;
 }
 
 #o_textarb2{
   float: left;
-  width: 60%;
+  width: 50%;
+  padding-top: 12%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 110%;
+  line-height: 2;
+  font-weight: bold;
 }
 
-/*******************
-*      FLORE       *
-*******************/
+#o_textarb2 p{
+	width:70%;
+  padding-left: 20%;
+}
 
 /*******************
 *      SPORT       *
