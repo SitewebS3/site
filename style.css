@@ -80,6 +80,227 @@ nav a{
 *      FAUNE      *
 *******************/
 
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: white;
+}
+
+/*SURICATE*/
+
+#o_imgsuri{
+  float: right;
+  width: 50%;
+  padding-left: 0%;
+  text-align: center;
+}
+
+#o_imgs{
+	width: 100%;
+}
+
+#o_textsuri h2{
+	font-family: "California";
+	font-size: 500%;
+	text-align: left;
+	padding-top: 15%;
+	padding-left: 25%;
+}
+
+#o_textsuri p{
+  float: left;
+  padding-top: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 110%;
+  line-height: 1.5;
+  font-weight: bold;
+  width:30%;
+  text-align: left;
+  padding-left: 20%;
+}
+
+/*PINGUOINS*/
+
+#o_pingouin{
+	overflow: hidden;
+}
+
+#o_imgping{
+  float: left;
+  width: 50%;
+  padding-left: 0%;
+  text-align: center;
+}
+
+#o_imgp{
+	width: 100%;
+}
+
+#o_textping h2{
+	font-family: "California";
+	font-size: 500%;
+	text-align: right;
+	padding-top: 20%;
+	padding-right: 25%;
+}
+
+#o_textping p{
+  float: right;
+  padding-top: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 110%;
+  line-height: 1.5;
+  font-weight: bold;
+  width:30%;
+  text-align: right;
+  padding-right: 20%;
+}
+
+/*CROCODILE*/
+
+#o_croco{
+	overflow: hidden;
+}
+
+#o_imgcroco{
+  float: right;
+  width: 50%;
+  padding-left: 0%;
+  text-align: center;
+}
+
+#o_imgc{
+	width: 100%;
+}
+
+#o_textcroco h2{
+	font-family: "California";
+	font-size: 500%;
+	text-align: left;
+	padding-top: 10%;
+	padding-left: 20%;
+}
+
+#o_textcroco p{
+  float: left;
+  padding-top: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 110%;
+  line-height: 1.5;
+  font-weight: bold;
+  width:30%;
+  text-align: left;
+  padding-left: 15%;
+}
+
+/*PINGUOINS*/
+
+#o_gir{
+	overflow: hidden;
+}
+
+#o_imggir{
+  float: left;
+  width: 50%;
+  padding-left: 0%;
+  text-align: center;
+}
+
+#o_imgg{
+	width: 100%;
+}
+
+#o_textgir h2{
+	font-family: "California";
+	font-size: 500%;
+	text-align: right;
+	padding-top: 10%;
+	padding-right: 25%;
+}
+
+#o_textgir p{
+  float: right;
+  padding-top: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 110%;
+  line-height: 1.5;
+  font-weight: bold;
+  width:30%;
+  text-align: right;
+  padding-right: 20%;
+}
+
+
+.slide2 {
+  background-image: white;
+}
+.slide3 {
+  background-image: white;
+}
+.slide4 {
+  background-image: white;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 10rem;
+  color: #000;
+  font-family: "California";
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: 35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #000 transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #000;
+  right: 0;
+  margin-right: 30px;
+}
+
+
+
 
 
 /*******************
