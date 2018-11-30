@@ -379,6 +379,11 @@ body,
   padding-left: 20%;
 }
 
+#h3foot{
+	width: 70%;
+	padding-left: 20%;
+}
+
 /*******************
 *      SPORT       *
 *******************/
@@ -408,18 +413,35 @@ body,
 #o_rugby{
 	width: 100%;
 	background-color: #FBD700;
-	height: 300px;
+	height: 30vh;
 }
 
 #o_foot{
 	width: 100%;
-	height: 400px;
+	height: 125vh;
 	background-color: #FBD700;
 }
 
 h3{
 	font-family: "California";
 	font-size: 230%;
+}
+
+#o_imgfoot{
+  float: right;
+  width: 45%;
+  margin-top: 10%;
+}
+
+#o_cricket{
+	width: 100%;
+	height: 300px;
+	margin-top: -30vh;
+}
+
+#tribal2{
+	width: 100vw;
+	margin-top: 15vh;
 }
 
 /*******************
