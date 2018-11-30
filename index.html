@@ -14,8 +14,8 @@
         <img id="tribal" src="images/Tribal 1.png">
         <nav>
             <ul>
-                <li><a href="z">faune</a></li>
                 <li><a href="z">flore</a></li>
+                <li><a href="z">faune</a></li>
                 <li><a href="z">culture</a></li>
                 <li><a href="z">sport</a></li>
             </ul>
@@ -44,9 +44,76 @@
       </div>
     </section>
 
-    <section style="background-color: white; height: 60px; width: 100vw"> <!--FAUNE-->
+
+    <section> <!--FAUNE-->
 
         
+
+    <section> <!--FAUNE-->
+      <div class="wrap">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="slider">
+          <div class="slide slide1">
+            <div class="slide-content">
+              <span>faune</span>
+            </div>
+          </div>
+          <div class="slide slide2">
+            <div class="slide-content">
+              <div id="o_suricate">
+                <div id="o_imgsuri">
+                  <img id="o_imgs" src="images/Suricate.png">
+                </div>
+                <div id="o_textsuri">
+                  <h2>suricate</h2>
+                  <p>La sentinelle du désert est un petit mamifère de la famille des Herpestidae. Ne dépassant pas les 30 centimètres, il a tendance à ses dresser sur ses pattes arrières pour avoir une meilleure vue de son environnement et ainsi prévenir des dangers potentiels le reste de son groupe. En fonction du type de prédateurs, ses vocalises changent.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide3">
+            <div class="slide-content">
+              <div id="o_pingouin">
+                <div id="o_imgping">
+                  <img id="o_imgp" src="images/Pingouin.png">
+                </div>
+                <div id="o_textping">
+                  <h2>pingouin</h2>
+                  <p>Vous n’avez pas mal vu, il y a des pingouins en Afrique du Sud! C’est d’ailleurs l’unique raison pour laquelle il se trouve dans cette liste. Petits, ils ne dépassent pas les 70 centimètres et sont localisés principalement aux alentour du Cap - on les appelle “les manchots du Cap” - dans le quartier de Boulders Beach. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide4">
+            <div class="slide-content">
+              <div id="o_croco">
+                <div id="o_imgcroco">
+                  <img id="o_imgc" src="images/Croco.png">
+                </div>
+                <div id="o_textcroco">
+                  <h2>crocodiles</h2>
+                  <p>Le plus gros réptile du monde peut atteindre plus de 5 mètres de long. Sa morphologie lui permet de rester 50 minutes sous l’eau ce qui lui permet de préparer des ambuscadeset de pièger ses proies, les animaux venant boire aux alentours des cours d’eau. Ses yeux, ses oreilles et ses narines sont très haut sur son corps ce qui lui permet d’être pratiquement immergé dans l’eau tout en respirant. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide5">
+            <div class="slide-content">
+              <div id="o_gir">
+                <div id="o_imggir">
+                  <img id="o_imgg" src="images/Giraffe.png">
+                </div>
+                <div id="o_textgir">
+                  <h2>girafe</h2>
+                  <p>La girafe est un mamifère ruminant présent un peu partout en Afrique. Très reconnaissable grâce à son long coup et sa robe tachetée jaune et marron, elle est l’un des emblème de la faune africaine. Elle peut atteindre plus de 6 mètre de haut ce qui lui permet de manger les feuilles sur la cime des arbres. C’est bien entendu l’animal terrestre le plus grand du monde.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="arrow-right" class="arrow"></div>
+      </div>
+
     </section>
 
     <div id="r_bg_marron"></div>
@@ -81,6 +148,57 @@
     <footer>
 
     </footer>
+    <script type="text/javascript">
+      let sliderImages = document.querySelectorAll(".slide"),
+      arrowLeft = document.querySelector("#arrow-left"),
+      arrowRight = document.querySelector("#arrow-right"),
+      current = 0;
 
+    // Clear all images
+    function reset() {
+      for (let i = 0; i < sliderImages.length; i++) {
+        sliderImages[i].style.display = "none";
+      }
+    }
+
+    // Init slider
+    function startSlide() {
+      reset();
+      sliderImages[0].style.display = "block";
+    }
+
+    // Show prev
+    function slideLeft() {
+      reset();
+      sliderImages[current - 1].style.display = "block";
+      current--;
+    }
+
+    // Show next
+    function slideRight() {
+      reset();
+      sliderImages[current + 1].style.display = "block";
+      current++;
+    }
+
+    // Left arrow click
+    arrowLeft.addEventListener("click", function() {
+      if (current === 0) {
+        current = sliderImages.length;
+      }
+      slideLeft();
+    });
+
+    // Right arrow click
+    arrowRight.addEventListener("click", function() {
+      if (current === sliderImages.length - 1) {
+        current = -1;
+      }
+      slideRight();
+    });
+
+    startSlide();
+
+    </script>
   </body>
 </html>
