@@ -6,7 +6,6 @@
     font-style: normal;
 }
 
-
 /*******************
 *      HEADER      *
 *******************/
@@ -17,7 +16,6 @@ header{
 	min-height: 100vh;
 	background-size: cover;
 	z-index: 0;
-	/**background-position: center bottom;**/
 }
 
 header:after{
@@ -31,7 +29,6 @@ header:after{
 	left: 0;
 	top: 0;
 	z-index: 0;
-	/**background-position: center bottom;**/
 }
 
 h1{
@@ -310,7 +307,7 @@ body,
 .titre{
 	text-align: center;
 	font-family: "California";
-	font-size: 100px;
+	font-size: 700%;
 	padding-top: 10%;
 	padding-bottom: 10%;
 }
@@ -329,7 +326,7 @@ body,
 #o_arb1{
 	width: 100%;
 	background-color: #420F01;
-	height: 700px;
+	height: 80vh;
 }
 
 #o_imgarb1{
@@ -344,7 +341,7 @@ body,
   width: 50%;
   padding-top: 10%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 110%;
+  font-size: 130%;
   line-height: 2;
   font-weight: bold;
 }
@@ -355,7 +352,7 @@ body,
 
 #o_arb2{
 	width: 100%;
-	height: 550px;
+	height: 75vh;
 	background-color: #933900;
 }
 
@@ -369,7 +366,7 @@ body,
   width: 50%;
   padding-top: 12%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 110%;
+  font-size: 130%;
   line-height: 2;
   font-weight: bold;
 }
@@ -447,7 +444,70 @@ h3{
 /*******************
 *     CULTURE      *
 *******************/
+.r_box{
+	width: 100vw;
+	align-items: flex-end;
+	display: flex;
+}
+
+#box_text_mandela{
+	width: 40vw;
+	height: 70vh;
+	background-color: #FBD700;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+  	font-size: 125%;
+  	line-height: 2;
+  	font-weight: bold;
+}
+
+#box-text_mandela2{
+	width: 80%;
+	height: 80%;
+	margin: 10% 0% 0% 10%;
+}
+
+#imgmandela{
+	width: 60vw;
+	margin-bottom: -0.4%;
+}
+
+#imgnourriture{
+	width: 60vw;
+	height: 70vh;
+}
 
 /*******************
 *      FOOTER      *
 *******************/
+footer{
+	margin-top: 10vh;
+}
+
+        .column{
+	width:33.33%;
+	float:left;	
+	height:20px;
+}
+
+
+footer p{
+	font-family: 'Montserrat', sans-serif;
+	color:#FBD700;
+	text-align: center;
+	font-weight: bold;
+}
+
+footer :nth-child(3){
+	text-align: right;
+}
+
+
+.logors{
+	height:20px;
+	margin-right:20px;
+}
+
+footer :after{
+	clear:both;
+}
