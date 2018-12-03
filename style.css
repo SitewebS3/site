@@ -312,7 +312,6 @@ body,
 	padding-bottom: 10%;
 }
 
-
 #o_flore {
 	background-color: #420F01;
 	color: white;
@@ -376,9 +375,25 @@ body,
   padding-left: 20%;
 }
 
-#h3foot{
-	width: 70%;
-	padding-left: 20%;
+@media only screen and (max-width: 640px) {
+  .titre{
+    font-size: 350%;
+  }
+
+  #o_imgarb1{
+    padding-top: 10%;
+    float: none;
+    width: 70%;
+  }
+
+  #o_textarb1{
+    float: none;
+    font-size: 100%;
+    text-align: center;
+    width: 100%;
+    line-height: 1.7;
+  }
+
 }
 
 /*******************
@@ -486,7 +501,7 @@ footer{
 
         .column{
 	width:33.33%;
-	float:left;	
+	float:left;
 	height:20px;
 }
 
