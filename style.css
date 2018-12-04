@@ -498,9 +498,9 @@ h3{
   	font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
-.r_box:nth-of-type(1) #box_text_mandela{
-	font-size: 110%;
+@media screen and (max-width: 1024px) {
+#box_text_mandela{
+	font-size: 108%;
 }
 }
 
@@ -517,9 +517,15 @@ h3{
 	margin: 10% 0% 0% 10%;
 }
 
+@media screen and (max-width: 1024px) {
+.r_box:nth-of-type(2) #box-text_mandela2{
+	margin: 5% 0% 0% 10%;
+}
+}
+
 @media screen and (max-width: 768px) {
 .r_box:nth-of-type(2) #box-text_mandela2{
-	margin: 0% 0% 0% 10%
+	margin: 5% 0% 5% 10%;
 }
 }
 
