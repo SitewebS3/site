@@ -16,6 +16,7 @@ header{
 	min-height: 100vh;
 	background-size: cover;
 	z-index: 0;
+	position: relative;
 }
 
 header:after{
@@ -70,8 +71,14 @@ nav a{
 #tribal{
 	height: 100vh;
 	position: absolute;
-	margin-left: 90vw;
 	z-index: 999;
+	right: 0;
+	top: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  }
 }
 /*******************
 *      FAUNE      *
