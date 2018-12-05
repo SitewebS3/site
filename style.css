@@ -16,6 +16,7 @@ header{
 	min-height: 100vh;
 	background-size: cover;
 	z-index: 0;
+	position: relative;
 }
 
 header:after{
@@ -39,6 +40,12 @@ h1{
 	color: white;
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-top: 33vh;
+  }
+}
+
 nav {
   width:100vw;
   height:auto;
@@ -53,6 +60,12 @@ nav ul {
   margin: auto;
   margin-top: 30px;
   z-index: 999;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    margin-left: 0vw;
+  }
 }
 
 nav li {
@@ -70,9 +83,12 @@ nav a{
 #tribal{
 	height: 100vh;
 	position: absolute;
-	margin-left: 90vw;
 	z-index: 999;
+	right: 0;
+	top: 0;
 }
+
+
 /*******************
 *      FAUNE      *
 *******************/
@@ -105,34 +121,37 @@ body,
 
 /*SURICATE*/
 
+#o_suricate{
+	overflow: hidden;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
 #o_imgsuri{
-  float: right;
-  width: 50%;
-  padding-left: 0%;
-  text-align: center;
+ height: 100vh;
+ align-items: flex-end;
 }
 
 #o_imgs{
-	width: 100%;
+	height: 100%;
+	margin-right: 15vw;
 }
 
 #o_textsuri h2{
 	font-family: "California";
-	font-size: 500%;
-	text-align: left;
+	font-size: 600%;
+	text-align: center;
 	padding-top: 15%;
-	padding-left: 25%;
 }
 
 #o_textsuri p{
-  float: left;
-  padding-top: 2%;
+  margin-top: 5vh;
   font-family: 'Montserrat', sans-serif;
-  font-size: 110%;
+  font-size: 130%;
   line-height: 1.5;
   font-weight: bold;
-  width:30%;
-  text-align: left;
+  width:60%;
+  text-align: center;
   padding-left: 20%;
 }
 
@@ -140,111 +159,106 @@ body,
 
 #o_pingouin{
 	overflow: hidden;
+	display: flex;
+	flex-direction: row;
 }
 
 #o_imgping{
-  float: left;
-  width: 50%;
-  padding-left: 0%;
-  text-align: center;
+	height: 100vh;
+    align-items: flex-end;
 }
 
 #o_imgp{
-	width: 100%;
+	height: 100%;
 }
 
 #o_textping h2{
 	font-family: "California";
-	font-size: 500%;
-	text-align: right;
+	font-size: 600%;
+	text-align: center;
 	padding-top: 20%;
-	padding-right: 25%;
 }
 
 #o_textping p{
-  float: right;
-  padding-top: 2%;
+  margin-top: 5vh;
   font-family: 'Montserrat', sans-serif;
-  font-size: 110%;
+  font-size: 130%;
   line-height: 1.5;
   font-weight: bold;
-  width:30%;
-  text-align: right;
-  padding-right: 20%;
+  width:60%;
+  text-align: center;
+  padding-left: 20%;
 }
 
 /*CROCODILE*/
 
 #o_croco{
 	overflow: hidden;
+	display: flex;
+	flex-direction: row-reverse;
 }
 
 #o_imgcroco{
-  float: right;
-  width: 50%;
-  padding-left: 0%;
-  text-align: center;
+    height: 100vh;
+    align-items: flex-end;
 }
 
 #o_imgc{
-	width: 100%;
+	height: 100%;
 }
 
 #o_textcroco h2{
 	font-family: "California";
-	font-size: 500%;
-	text-align: left;
-	padding-top: 10%;
-	padding-left: 20%;
+	font-size: 600%;
+	text-align: center;
+	padding-top: 20%;
+
 }
 
 #o_textcroco p{
-  float: left;
-  padding-top: 2%;
+  margin-top: 5vh;
   font-family: 'Montserrat', sans-serif;
-  font-size: 110%;
+  font-size: 130%;
   line-height: 1.5;
   font-weight: bold;
-  width:30%;
-  text-align: left;
-  padding-left: 15%;
+  width:60%;
+  text-align: center;
+  padding-left: 20%;
 }
 
 /*PINGUOINS*/
 
 #o_gir{
 	overflow: hidden;
+	display: flex;
+	flex-direction: row;
 }
 
 #o_imggir{
-  float: left;
-  width: 50%;
-  padding-left: 0%;
-  text-align: center;
+  height: 100vh;
+  align-items: flex-end;
 }
 
 #o_imgg{
-	width: 100%;
+	height: 100%;
 }
 
 #o_textgir h2{
 	font-family: "California";
-	font-size: 500%;
-	text-align: right;
-	padding-top: 10%;
-	padding-right: 25%;
+	font-size: 600%;
+	text-align: center;
+	padding-top: 20%;
 }
 
 #o_textgir p{
-  float: right;
-  padding-top: 2%;
+  margin-top: 5vh;
   font-family: 'Montserrat', sans-serif;
-  font-size: 110%;
+  font-size: 130%;
   line-height: 1.5;
   font-weight: bold;
-  width:30%;
-  text-align: right;
-  padding-right: 20%;
+  width:60%;
+  text-align: center;
+  padding-left: 20%;
 }
 
 
@@ -503,6 +517,12 @@ h3{
 	display: flex;
 }
 
+@media screen and (max-width: 768px) {
+.r_box:nth-of-type(2){
+	flex-direction: column-reverse;
+}
+}
+
 #box_text_mandela{
 	width: 40vw;
 	height: 70vh;
@@ -514,10 +534,35 @@ h3{
   	font-weight: bold;
 }
 
+@media screen and (max-width: 1024px) {
+#box_text_mandela{
+	font-size: 108%;
+}
+}
+
+@media screen and (max-width: 768px) {
+.r_box:nth-of-type(2) #box_text_mandela{
+	width: 100%;
+	height: 100%;
+}
+}
+
 #box-text_mandela2{
 	width: 80%;
 	height: 80%;
 	margin: 10% 0% 0% 10%;
+}
+
+@media screen and (max-width: 1024px) {
+.r_box:nth-of-type(2) #box-text_mandela2{
+	margin: 5% 0% 0% 10%;
+}
+}
+
+@media screen and (max-width: 768px) {
+.r_box:nth-of-type(2) #box-text_mandela2{
+	margin: 5% 0% 5% 10%;
+}
 }
 
 #imgmandela{
@@ -528,6 +573,12 @@ h3{
 #imgnourriture{
 	width: 60vw;
 	height: 70vh;
+}
+
+@media screen and (max-width: 768px) {
+.r_box:nth-of-type(2) #imgnourriture{
+	width: 100%;
+}
 }
 
 /*******************
