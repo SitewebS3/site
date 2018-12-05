@@ -296,10 +296,6 @@ body,
   margin-right: 30px;
 }
 
-
-
-
-
 /*******************
 *      FLORE       *
 *******************/
@@ -318,61 +314,52 @@ body,
 }
 
 .o_imgarb {
-    width: 80%;
-    height: 80%;
+    max-width: 400px;
+    width: 100%;
 }
 
 #o_arb1{
-	width: 100%;
 	background-color: #420F01;
-	height: 80vh;
+	min-height: 80vh;
+  display: flex;
 }
 
 #o_imgarb1{
-  float: left;
-  width: 50%;
   padding-left: 0%;
   text-align: center;
+  width: 50%;
+  flex-shrink: 0;
 }
 
-#o_textarb1{
-  float: right;
-  width: 50%;
-  padding-top: 10%;
+.o_textarb{
   font-family: 'Montserrat', sans-serif;
   font-size: 130%;
   line-height: 2;
   font-weight: bold;
 }
 
-#o_textarb1 p{
-	width:70%;
+#o_arb1 .o_textarb{
+  padding-right: 10%;
+  padding-top: 2%;
 }
 
+
 #o_arb2{
-	width: 100%;
-	height: 75vh;
+  min-height: 70vh;
+  display: flex;
 	background-color: #933900;
 }
 
 #o_imgarb2{
-  float: right;
-  width: 45%;
-}
-
-#o_textarb2{
-  float: left;
+  padding-left: 0%;
+  text-align: center;
   width: 50%;
-  padding-top: 12%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 130%;
-  line-height: 2;
-  font-weight: bold;
+  flex-shrink: 0;
 }
 
-#o_textarb2 p{
-	width:70%;
-  padding-left: 20%;
+#o_arb2 .o_textarb{
+  padding-top:7%;
+  padding-left: 10%;
 }
 
 @media only screen and (max-width: 640px) {
@@ -400,6 +387,11 @@ body,
 *      SPORT       *
 *******************/
 
+#r_sport{
+	color: black;
+	background-color: #FBD700;
+}
+
 #r_bg_marron{
 	background-color: #933900;
 	width: 100vw;
@@ -412,48 +404,94 @@ body,
 	height: 30px;
 }
 
-#r_sport{
-	color: black;
-	background-color: #FBD700;
-}
-
-#r_bg_jaune{
-	background-color: #FBD700;
-	width: 100vw;
-}
-
-#o_rugby{
-	width: 100%;
-	background-color: #FBD700;
-	height: 30vh;
-}
-
-#o_foot{
-	width: 100%;
-	height: 125vh;
-	background-color: #FBD700;
-}
-
 h3{
 	font-family: "California";
 	font-size: 230%;
 }
 
+/************************/
+
+#o_rugby{
+	background-color: #FBD700;
+	height: 60vh;
+  display: flex;
+}
+
+#o_imgr {
+    max-width: 400px;
+    width: 100%;
+}
+
+#o_imgrug{
+  padding-left: 0%;
+  text-align: center;
+  width: 50%;
+  flex-shrink: 0;
+}
+
+#o_textrug{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 130%;
+  line-height: 2;
+  padding-right: 10%;
+}
+
+#o_foot{
+	height: 60vh;
+	background-color: #FBD700;
+  display: flex;
+}
+
+#o_imgf {
+    max-width: 400px;
+    width: 100%;
+}
+
 #o_imgfoot{
-  float: right;
-  width: 45%;
-  margin-top: 10%;
+  padding-left: 0%;
+  text-align: center;
+  width: 50%;
+  flex-shrink: 0;
+}
+
+#o_textfoot{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 130%;
+  line-height: 2;
+  padding-left: 10%;
+  padding-top: 2%;
 }
 
 #o_cricket{
-	width: 100%;
-	height: 300px;
-	margin-top: -30vh;
+	height: 30vh;
+  display: flex;
 }
+
+#o_imgc {
+    max-width: 400px;
+    width: 100%;
+}
+
+#o_imgcrick{
+  padding-left: 0%;
+  text-align: center;
+  width: 50%;
+  flex-shrink: 0;
+}
+
+#o_textcrick{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 130%;
+  line-height: 2;
+  padding-right: 10%;
+  padding-top: 2%;
+}
+
+/****************************/
 
 #tribal2{
 	width: 100vw;
-	margin-top: 15vh;
+	margin-top: 20%;
 }
 
 /*******************
