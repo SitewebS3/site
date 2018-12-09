@@ -40,6 +40,12 @@ h1{
 	color: white;
 }
 
+@media screen and (max-width: 1024px) {
+  h1 {
+    margin-top: 18%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     margin-top: 33vh;
@@ -132,6 +138,14 @@ body,
  align-items: flex-end;
 }
 
+@media screen and (max-width: 768px) {
+  #o_imgsuri {
+    height: 90vw;
+    align-self: flex-end;
+    margin-right: -10vw;
+  }
+}
+
 #o_imgs{
 	height: 100%;
 	margin-right: 15vw;
@@ -166,6 +180,14 @@ body,
 #o_imgping{
 	height: 100vh;
     align-items: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  #o_imgping {
+    height: 70vw;
+    align-self: flex-end;
+    margin-right: -10vw;
+  }
 }
 
 #o_imgp{
@@ -203,6 +225,14 @@ body,
     align-items: flex-end;
 }
 
+@media screen and (max-width: 768px) {
+  #o_imgcroco {
+    height: 80vw;
+    align-self: flex-end;
+    margin-right: -10vw;
+  }
+}
+
 #o_imgc{
 	height: 100%;
 }
@@ -226,7 +256,7 @@ body,
   padding-left: 20%;
 }
 
-/*PINGUOINS*/
+/*GIRAFE*/
 
 #o_gir{
 	overflow: hidden;
@@ -237,6 +267,22 @@ body,
 #o_imggir{
   height: 100vh;
   align-items: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  #o_imggir {
+    height: 60vw;
+    align-self: flex-end;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #o_imggir {
+    height: 50vw;
+    align-self: flex-end;
+    margin: auto;
+  }
 }
 
 #o_imgg{
@@ -260,6 +306,19 @@ body,
   text-align: center;
   padding-left: 20%;
 }
+
+@media screen and (max-width: 768px) {
+  #o_textgir {
+    margin-left: -20vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #o_textgir {
+    margin-left: -15vw;
+  }
+}
+
 
 
 .slide2 {
@@ -335,8 +394,13 @@ body,
 #o_arb1{
 	background-color: #420F01;
 	min-height: 80vh;
-  display: flex;
+    display: flex;
 }
+
+@media only screen and (max-width: 768px) {
+  #o_arb1{
+    min-height: 60vh;
+  }}
 
 #o_imgarb1{
   padding-left: 0%;
@@ -344,6 +408,11 @@ body,
   width: 50%;
   flex-shrink: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  #o_imgarb1{
+    margin: auto;
+  }}
 
 .o_textarb{
   font-family: 'Montserrat', sans-serif;
@@ -357,12 +426,16 @@ body,
   padding-top: 2%;
 }
 
-
 #o_arb2{
   min-height: 70vh;
   display: flex;
-	background-color: #933900;
+  background-color: #933900;
 }
+
+@media only screen and (max-width: 768px) {
+  #o_arb2{
+    min-height: 60vh;
+  }}
 
 #o_imgarb2{
   padding-left: 0%;
@@ -370,6 +443,11 @@ body,
   width: 50%;
   flex-shrink: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  #o_imgarb2{
+    margin: auto;
+  }}
 
 #o_arb2 .o_textarb{
   padding-top:7%;
@@ -379,12 +457,11 @@ body,
 @media only screen and (max-width: 640px) {
   .titre{
     font-size: 350%;
-  }
+  }}
 
   #o_imgarb1{
     padding-top: 10%;
     float: none;
-    width: 70%;
   }
 
   #o_textarb1{
@@ -394,8 +471,6 @@ body,
     width: 100%;
     line-height: 1.7;
   }
-
-}
 
 /*******************
 *      SPORT       *
@@ -448,6 +523,7 @@ h3{
   font-size: 130%;
   line-height: 2;
   padding-right: 10%;
+  font-weight: bold;
 }
 
 #o_foot{
@@ -474,6 +550,7 @@ h3{
   line-height: 2;
   padding-left: 10%;
   padding-top: 2%;
+  font-weight: bold;
 }
 
 #o_cricket{
@@ -481,7 +558,7 @@ h3{
   display: flex;
 }
 
-#o_imgc {
+#o_imgck {
     max-width: 400px;
     width: 100%;
 }
@@ -499,6 +576,7 @@ h3{
   line-height: 2;
   padding-right: 10%;
   padding-top: 2%;
+  font-weight: bold;
 }
 
 /****************************/
@@ -586,6 +664,7 @@ h3{
 *******************/
 footer{
 	margin-top: 10vh;
+	padding-bottom: 5vh;
 }
 
         .column{
