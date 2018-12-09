@@ -11,7 +11,7 @@
 *******************/
 
 header{
-	background-image: url("images/joe-mcdaniel-380048-unsplash.jpg");
+  background-image: url("images/joe-mcdaniel-380048-unsplash.jpg");
 	width: 100%;
 	min-height: 100vh;
 	background-size: cover;
@@ -20,7 +20,7 @@ header{
 }
 
 header:after{
-	background-image: url("images/joe-mcdaniel-380048-unsplash4.png");
+  background-image: url("images/joe-mcdaniel-380048-unsplash4.png");
 	content: "";
 	display: block;
 	background-size: cover;
