@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Africa</title>
   </head>
@@ -15,10 +16,10 @@
         <img id="tribal" src="images/Tribal 1.png">
         <nav>
             <ul>
-                <li><a href="z">flore</a></li>
-                <li><a href="z">faune</a></li>
-                <li><a href="z">culture</a></li>
-                <li><a href="z">sport</a></li>
+                <li><a class="js-scrollTo" href="#o_flore">flore</a></li>
+                <li><a class="js-scrollTo" href="#faune">faune</a></li>
+                <li><a class="js-scrollTo" href="#r_sport">sport</a></li>
+                <li><a class="js-scrollTo" href="#culture">culture</a></li>
             </ul>
         </nav>
         <h1>South Africa</h1>
@@ -46,12 +47,7 @@
       </div>
     </section>
 
-
-    <section> <!--FAUNE-->
-
-
-
-    <section> <!--FAUNE-->
+    <section id="faune"> <!--FAUNE-->
       <div class="wrap">
         <div id="arrow-left" class="arrow"></div>
         <div id="slider">
@@ -146,7 +142,7 @@
 
       <div id="o_cricket">
         <div id="o_imgcrick">
-          <img id="o_imgc" src="images/Cricket.png">
+          <img id="o_imgck" src="images/Cricket.png">
         </div>
         <div id="o_textcrick">
             <h3>cricket</h3>
@@ -158,17 +154,17 @@
 
     <div><img id="tribal2" src="images/Tribal 2.png"></div>
 
-    <section> <!--CULTURE-->
+    <section id="culture"> <!--CULTURE-->
       <h2 class="titre">culture</h2>
       <div class="r_box">
         <div>
               <img  id="imgmandela" src="images/Mandela.png">
-          </div>
-          <div id="box_text_mandela">
-              <div id="box-text_mandela2">
-                  <p>Nelson Rolihlahla “Madiba” Mandela est l’icône de cette nation qu’est l’Afrique du Sud. Héro de la lutte contre l'Apartheid, il est devenu le personnage principal de l’histoire du pays en étant le premier président de couleurs et en le restant pendant 5 ans. Grand défenseur des droits de l’Homme, il a inspiré le respect à la planète entière. Il reçut le prix Nobel de la paix en 1993. Sa mort, le 5 décembre 2013, ému toute la communauté internationale.</p>
-              </div>
-          </div>
+        </div>
+        <div id="box_text_mandela">
+            <div id="box-text_mandela2">
+                <p>Nelson Rolihlahla “Madiba” Mandela est l’icône de cette nation qu’est l’Afrique du Sud. Héro de la lutte contre l'Apartheid, il est devenu le personnage principal de l’histoire du pays en étant le premier président de couleurs et en le restant pendant 5 ans. Grand défenseur des droits de l’Homme, il a inspiré le respect à la planète entière. Il reçut le prix Nobel de la paix en 1993. Sa mort, le 5 décembre 2013, ému toute la communauté internationale.</p>
+            </div>
+         </div>
       </div>
 
       <div class="r_box">
@@ -247,6 +243,15 @@
     });
 
     startSlide();
+
+    $(document).ready(function() {
+    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      var speed = 1250; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+    });
+  });
 
     </script>
   </body>
