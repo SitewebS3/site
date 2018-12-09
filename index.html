@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Africa</title>
   </head>
@@ -15,10 +16,10 @@
         <img id="tribal" src="images/Tribal 1.png">
         <nav>
             <ul>
-                <li><a href="#o_flore">flore</a></li>
-                <li><a href="#faune">faune</a></li>
-                <li><a href="#r_sport">sport</a></li>
-                <li><a href="#culture">culture</a></li>
+                <li><a class="js-scrollTo" href="#o_flore">flore</a></li>
+                <li><a class="js-scrollTo" href="#faune">faune</a></li>
+                <li><a class="js-scrollTo" href="#r_sport">sport</a></li>
+                <li><a class="js-scrollTo" href="#culture">culture</a></li>
             </ul>
         </nav>
         <h1>South Africa</h1>
@@ -242,6 +243,15 @@
     });
 
     startSlide();
+
+    $(document).ready(function() {
+    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      var speed = 1250; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+    });
+  });
 
     </script>
   </body>
