@@ -46,11 +46,19 @@ h1{
   }
 }
 
+@media screen and (max-width: 812px) {
+  h1 {
+    margin-top: 25vh;
+  }
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     margin-top: 33vh;
   }
 }
+
+
 
 nav {
   width:100vw;

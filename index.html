@@ -253,22 +253,6 @@
     });
   });
 
-    var nav = $("nav");
-var navPlaceholder = $("#navPlaceholder");
-var navBaseOffset = nav.offset().top;
-
-$(window).on("scroll", function() {
-    
-    var scrollTop = $(this).scrollTop();
-    
-    if(scrollTop > navBaseOffset) {
-        nav.addClass("fixed");
-    }
-    else {
-        nav.removeClass("fixed");
-    }
-});
-
     </script>
   </body>
 </html>
