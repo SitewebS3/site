@@ -48,7 +48,19 @@ h1{
 
 @media screen and (max-width: 768px) {
   h1 {
-    margin-top: 33vh;
+    margin-top: 32vh;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    margin-top: 15vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  h1 {
+    margin-top: 22.5vh ; 
   }
 }
 
@@ -68,7 +80,6 @@ nav {
 	z-index: 999;
 	background-color: rgba(0,0,0,0.4);
 }
-
 
 nav ul {
   list-style-type:none;
@@ -102,6 +113,12 @@ nav a{
 	z-index: 5;
 	right: 0;
 	top: 0;
+}
+
+@media screen and (max-width: 375px) {
+  #tribal {
+    display: none;
+  }
 }
 
 
@@ -283,7 +300,7 @@ body,
   #o_imggir {
     height: 60vw;
     align-self: flex-end;
-    margin: auto;
+    margin: auto; 
   }
 }
 
