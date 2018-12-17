@@ -66,12 +66,10 @@ h1{
 
 @media screen and (max-width: 360px) {
   h1 {
-    margin-top: 25.5vh ; 
+    margin-top: 18vh ;
     font-size: 19vw;
   }
 }
-
-
 
 nav {
   width:100vw;
@@ -119,6 +117,17 @@ nav a{
 @media screen and (max-width: 640px) {
   nav a {
     font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav a {
+    font-size: 135%;
+    Line-Height: 2.5;
+  }
+
+  nav ul{
+    text-align: center;
   }
 }
 
@@ -420,7 +429,7 @@ body,
   #o_imggir {
     height: 60vw;
     align-self: flex-end;
-    margin: auto; 
+    margin: auto;
   }
 }
 
@@ -518,7 +527,7 @@ body,
 
 @media only screen and (max-width: 360px) {
   .slide-content span{
-	font-size: 4rem; 
+	font-size: 4rem;
 	margin-top: 20vh;
   }}
 
@@ -1034,12 +1043,21 @@ h3{
 @media screen and (max-width: 768px) {
 #imgnourriture{
 	width: 100vw;
+  height: 45vh;
+}
+}
+
+@media screen and (max-width: 640px) {
+#imgnourriture{
+	width: 100vw;
+  height: 100vh;
 }
 }
 
 @media screen and (max-width: 360px) {
 #imgnourriture{
 	width: 100vw;
+  height: 35vh;
 }
 }
 
