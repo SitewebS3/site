@@ -145,6 +145,183 @@ nav a{
   }
 }
 
+/*******************
+*      FLORE       *
+*******************/
+
+.titre{
+	text-align: center;
+	font-family: "California";
+	font-size: 700%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+#o_flore {
+	background-color: #420F01;
+	color: white;
+}
+
+.o_imgarb {
+    max-width: 400px;
+    width: 100%;
+}
+
+#o_arb1{
+	background-color: #420F01;
+	min-height: 80vh;
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  #o_arb1{
+    min-height: 60vh;
+  }}
+
+@media only screen and (max-width: 360px) {
+  #o_arb1{
+    flex-direction: column;
+  }}
+
+
+#o_imgarb1{
+  padding-left: 0%;
+  text-align: center;
+  width: 50%;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #o_imgarb1{
+    margin: auto;
+}
+}
+
+@media screen and (max-width: 640px) {
+#o_imgarb1{
+	width: 40vw;
+	margin-top: -15%;
+}
+}
+
+@media only screen and (max-width: 360px) {
+  #o_imgarb1{
+    margin-top: -5vh;
+  }}
+
+.o_textarb{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 130%;
+  line-height: 2;
+  font-weight: bold;
+}
+
+#o_arb1 .o_textarb{
+  padding-right: 10%;
+  padding-top: 12%;
+}
+
+@media only screen and (max-width: 768px) {
+  #o_arb1 .o_textarb{
+  	font-size: 130%;
+    padding: 0px 30px 0px 15px;
+    text-align: center;
+    padding-top: 9vh;
+    margin-bottom: 5vh;
+  }}
+
+@media only screen and (max-width: 640px) {
+  #o_arb1 .o_textarb{
+  	font-size: 80%;
+    padding: 0px 30px 0px 15px;
+    text-align: center;
+    padding-top: 9vh;
+    margin-bottom: 5vh;
+  }}
+
+
+@media only screen and (max-width: 360px) {
+  #o_arb1 .o_textarb{
+  	font-size: 80%;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    margin-bottom: 5vh;
+  }}
+
+#o_arb2{
+  min-height: 70vh;
+  display: flex;
+  background-color: #933900;
+}
+
+@media only screen and (max-width: 768px) {
+  #o_arb2{
+    min-height: 60vh;
+  }}
+
+@media only screen and (max-width: 768px) {
+  #o_arb2{
+    flex-direction: column-reverse;
+  }}
+
+#o_imgarb2{
+  padding-left: 0%;
+  text-align: center;
+  width: 50%;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #o_imgarb2{
+    margin: auto;
+  }}
+
+#o_arb2 .o_textarb{
+  padding-top:7%;
+  padding-left: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+  #o_arb2 .o_textarb{
+  	font-size: 130%;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    margin-bottom: 5vh;
+  }}
+
+@media only screen and (max-width: 640px) {
+  #o_arb2 .o_textarb{
+  	font-size: 80%;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    margin-bottom: 5vh;
+  }}
+
+@media only screen and (max-width: 360px) {
+  #o_arb2 .o_textarb{
+  	font-size: 80%;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    margin-bottom: 5vh;
+  }}
+
+@media only screen and (max-width: 640px) {
+  .titre{
+    font-size: 350%;
+  }}
+
+  #o_imgarb1{
+    padding-top: 10%;
+    float: none;
+  }
+
+  #o_textarb1{
+    float: none;
+    font-size: 100%;
+    text-align: center;
+    width: 100%;
+    line-height: 1.7;
+  }
 
 /*******************
 *      FAUNE      *
@@ -555,183 +732,6 @@ body,
   margin-right: 30px;
 }
 
-/*******************
-*      FLORE       *
-*******************/
-
-.titre{
-	text-align: center;
-	font-family: "California";
-	font-size: 700%;
-	padding-top: 10%;
-	padding-bottom: 10%;
-}
-
-#o_flore {
-	background-color: #420F01;
-	color: white;
-}
-
-.o_imgarb {
-    max-width: 400px;
-    width: 100%;
-}
-
-#o_arb1{
-	background-color: #420F01;
-	min-height: 80vh;
-    display: flex;
-}
-
-@media only screen and (max-width: 768px) {
-  #o_arb1{
-    min-height: 60vh;
-  }}
-
-@media only screen and (max-width: 360px) {
-  #o_arb1{
-    flex-direction: column;
-  }}
-
-
-#o_imgarb1{
-  padding-left: 0%;
-  text-align: center;
-  width: 50%;
-  flex-shrink: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  #o_imgarb1{
-    margin: auto;
-}
-}
-
-@media screen and (max-width: 640px) {
-#o_imgarb1{
-	width: 40vw;
-	margin-top: -15%;
-}
-}
-
-@media only screen and (max-width: 360px) {
-  #o_imgarb1{
-    margin-top: -5vh;
-  }}
-
-.o_textarb{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 130%;
-  line-height: 2;
-  font-weight: bold;
-}
-
-#o_arb1 .o_textarb{
-  padding-right: 10%;
-  padding-top: 12%;
-}
-
-@media only screen and (max-width: 768px) {
-  #o_arb1 .o_textarb{
-  	font-size: 130%;
-    padding: 0px 30px 0px 15px;
-    text-align: center;
-    padding-top: 9vh;
-    margin-bottom: 5vh;
-  }}
-
-@media only screen and (max-width: 640px) {
-  #o_arb1 .o_textarb{
-  	font-size: 80%;
-    padding: 0px 30px 0px 15px;
-    text-align: center;
-    padding-top: 9vh;
-    margin-bottom: 5vh;
-  }}
-
-
-@media only screen and (max-width: 360px) {
-  #o_arb1 .o_textarb{
-  	font-size: 80%;
-    padding: 0px 15px 0px 15px;
-    text-align: center;
-    margin-bottom: 5vh;
-  }}
-
-#o_arb2{
-  min-height: 70vh;
-  display: flex;
-  background-color: #933900;
-}
-
-@media only screen and (max-width: 768px) {
-  #o_arb2{
-    min-height: 60vh;
-  }}
-
-@media only screen and (max-width: 768px) {
-  #o_arb2{
-    flex-direction: column-reverse;
-  }}
-
-#o_imgarb2{
-  padding-left: 0%;
-  text-align: center;
-  width: 50%;
-  flex-shrink: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  #o_imgarb2{
-    margin: auto;
-  }}
-
-#o_arb2 .o_textarb{
-  padding-top:7%;
-  padding-left: 10%;
-}
-
-@media only screen and (max-width: 768px) {
-  #o_arb2 .o_textarb{
-  	font-size: 130%;
-    padding: 0px 30px 0px 30px;
-    text-align: center;
-    margin-bottom: 5vh;
-  }}
-
-@media only screen and (max-width: 640px) {
-  #o_arb2 .o_textarb{
-  	font-size: 80%;
-    padding: 0px 15px 0px 15px;
-    text-align: center;
-    margin-bottom: 5vh;
-  }}
-
-@media only screen and (max-width: 360px) {
-  #o_arb2 .o_textarb{
-  	font-size: 80%;
-    padding: 0px 15px 0px 15px;
-    text-align: center;
-    margin-bottom: 5vh;
-  }}
-
-@media only screen and (max-width: 640px) {
-  .titre{
-    font-size: 350%;
-  }}
-
-  #o_imgarb1{
-    padding-top: 10%;
-    float: none;
-  }
-
-  #o_textarb1{
-    float: none;
-    font-size: 100%;
-    text-align: center;
-    width: 100%;
-    line-height: 1.7;
-  }
 
 /*******************
 *      SPORT       *
@@ -960,14 +960,14 @@ h3{
 	background-color: #FBD700;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
-  	font-size: 125%;
+  	font-size: 115%;
   	line-height: 2;
   	font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {
 #box_text_mandela{
-	font-size: 108%;
+	font-size: 104%;
 }
 }
 
